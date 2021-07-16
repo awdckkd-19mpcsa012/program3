@@ -1,0 +1,32 @@
+class Solution {
+public:
+    vector<int> sortArrayByParityII(vector<int>& nums) {
+ int N = A.length;
+        int[] ans = new int[N];
+        
+        int t = 0;
+        for (int x: A)
+        if (x % 2 == 0)
+        {
+            ans[t] = x;
+            t += 2;
+        }
+
+        t = 1;
+        for (int x: A)
+        if (x % 2 == 1) 
+        {
+            ans[t] = x;
+            t += 2;
+        }
+
+        return ans; 
+    }
+};
+
+   
+OUTPUT:
+
+nums = [4,2,5,7]
+ [4,5,2,7]
+    
